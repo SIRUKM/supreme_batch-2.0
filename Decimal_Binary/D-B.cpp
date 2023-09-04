@@ -25,11 +25,25 @@ int decimaltobinary_Method2(int n){
     }
     return binno;
 }
+
+int binarytodecimal(int n){
+    int decimal = 0;
+    int i = 0 ;
+    while(n){
+        int bin  = n%10;
+        decimal = decimal + bin * pow(2,i++);
+        n/=10;
+    }
+    return decimal;
+}
 int main()
 {
     int n;
     cin>>n;
-    int binary = decimaltobinary_Method2(n);
-    cout<<binary;
+    // int binary = decimaltobinary_Method2(n);
+    // cout<<binary;
+
+    int decimal = binarytodecimal(n);
+    cout<<decimal;
     return 0;
 }
