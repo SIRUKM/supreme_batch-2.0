@@ -13,11 +13,23 @@ int decimaltobinary_Method1(int n){
     }
     return binno;
 }
+
+int decimaltobinary_Method2(int n){
+    //Division Method
+    int binno =0;
+    int i = 0;
+    while(n>0){
+        int bit = n&1;
+        binno = bit * pow(10,i++) + binno;
+        n = n>>1;
+    }
+    return binno;
+}
 int main()
 {
     int n;
     cin>>n;
-    int binary = decimaltobinary_Method1(n);
+    int binary = decimaltobinary_Method2(n);
     cout<<binary;
     return 0;
 }
