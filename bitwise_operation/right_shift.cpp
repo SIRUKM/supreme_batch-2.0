@@ -16,5 +16,8 @@ int main()
     unsigned int n = -100;
     cout<<(n>>1)<<endl;
 
+    //testing contribution
+    cout<<1;
+
     return 0;
 }
