@@ -2,9 +2,8 @@
 using namespace std;
 int main()
 {
-    int n;
-    if(cin>>n){
-        cout<<"hello world";
-    }
+    
+    int a = 10;
+    cout<<++a*a++;
     return 0;
 }
