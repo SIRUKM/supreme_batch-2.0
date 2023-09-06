@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
     
-    int a = 10;
-    cout<<++a*a++;
+    int num = 5;
+    cout<<(~num + 1);
     return 0;
 }
