@@ -2,6 +2,7 @@
 using namespace std;
 void solve(int arr[], int n)//function ke aandar jub v array pass hota hai wo hamesha he pass by refrence hota hai 
 {
+    //n pass by value hua hai
     arr[0] = 100;
 }
 int main()

@@ -1,9 +1,16 @@
 #include<iostream>
 using namespace std;
+// bool function1(int x,int y )
+// {
+// bool bit = x&(1<<y);
+// return bit;
+// }
 int main()
 {
     
-    int num = 5;
-    cout<<(~num + 1);
-    return 0;
+    int a = 10;
+    char c = 'a';
+
+    int x = a +c;
+    cout<<x;
 }
