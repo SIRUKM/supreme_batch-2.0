@@ -11,7 +11,7 @@ int main()
     int ch;
     cin>>ch;
 
-    switch(ch){
+    switch(ch){//parameter kewal integral value hoo sakta hai eg:- int, c har,long....
         case 0:
         cout<<(a+b)<<endl;
         break;
