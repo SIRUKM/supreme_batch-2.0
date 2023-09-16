@@ -7,7 +7,7 @@ using namespace std;
 // }
 int main()
 {
-
+    cout<<"hello world";
     vector<int>v;
     cout<<v.size();
 }
