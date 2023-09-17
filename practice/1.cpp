@@ -7,7 +7,8 @@ using namespace std;
 // }
 int main()
 {
-    cout<<"hello world";
-    vector<int>v;
-    cout<<v.size();
+    int a;
+    cin>>a;
+
+    a%2==0?cout<<"even":cout<<"odd";
 }

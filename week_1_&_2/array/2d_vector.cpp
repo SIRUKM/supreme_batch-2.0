@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 int main()
 {
@@ -10,13 +10,13 @@ int main()
     //     cout<<endl;
     // }
 
-    //jagged array
+    // jagged array
     vector<vector<int> > brr;
-    vector<int> v1(10,1);
-    vector<int> v2(9,2);
-    vector<int> v3(8,3);
-    vector<int> v4(7,4);
-    vector<int> v5(6,5);
+    vector<int> v1(10, 1);
+    vector<int> v2(9, 2);
+    vector<int> v3(8, 3);
+    vector<int> v4(7, 4);
+    vector<int> v5(6, 5);
 
     brr.push_back(v1);
     brr.push_back(v2);
@@ -24,11 +24,13 @@ int main()
     brr.push_back(v4);
     brr.push_back(v5);
 
-    for(int i = 0; i<brr.size(); i++){
-        for(int j=0 ;j < brr[i].size();++j){
-            cout<<brr[i][j]<<" ";
+    for (int i = 0; i < brr.size(); i++)
+    {
+        for (int j = 0; j < brr[i].size(); ++j)
+        {
+            cout << brr[i][j] << " ";
         }
-        cout<<endl;
+        cout << endl;
     }
     return 0;
 }
