@@ -19,6 +19,21 @@ public:
     }
 
     Student(int id, int age, bool present, string name, int nos){
+        this->id = id;
+        this->age = age;
+        this->present = present;
+        this->name = name;
+        this->nos = nos;
+        cout<<"parameterised constructor with all attributes :"<<endl;
+    }
+
+    Student(const Student &srcobj){
+        this->name = srcobj.name;
+        this->age = srcobj.age;
+        this->gf = srcobj.gf;
+        this->nos = srcobj.nos;
+        this->present = srcobj.present;
+        this->id = srcobj.id;
         
     }
 
@@ -58,6 +73,12 @@ int main()
     // S2.present = 1;
     // S2.name = "Pintu";
     // S2.nos = 10;
+
+    Student s1(1,20,0, "pinku", 100);
+    Student s2;
+    s2 = s1;
+    cout<<s1.name<<endl;
+    cout<<s2.name<<endl;
 
     return 0;
 }
