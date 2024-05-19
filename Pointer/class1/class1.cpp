@@ -15,13 +15,14 @@ int main()
 
 
 
-    char c = 'a';
-    char *p1 = &c;
-    cout << c << endl;
-    cout<< "c ka address  :"<<&c<<endl;
-    cout << "p1 ka address  :" << p1 << endl;
+    // char c = 'a';
+    // char *p1 = &c;
+    // cout << c << endl;
+    // cout<< "c ka address  :"<<&c<<endl;
+    // cout << "p1 ka address  :" << p1 << endl;
 
-    cout<<"size of char pointer :"<<sizeof(p1)<<endl;
+    // cout<<"size of char pointer :"<<sizeof(p1)<<endl;
+    
 }
 
 // Output: saare pointers ka address same hai👍
