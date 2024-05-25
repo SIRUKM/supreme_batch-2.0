@@ -13,7 +13,17 @@ public:
     int nos;
 
     Student(){
-        
+        cout<<"Constructor is called"<<endl;
+    }
+
+    
+    Student(int _id , int _age , bool _present ,string _name, int _nos) {
+        id = _id;
+        age = _age;
+        present = _present;
+        name = _name;
+        nos = _nos;
+
     }
 
     void study()
