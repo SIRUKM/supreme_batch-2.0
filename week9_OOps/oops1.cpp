@@ -12,20 +12,19 @@ public:
     string name;
     int nos;
 
-    Student(){
-        cout<<"Constructor is called"<<endl;
+    Student()
+    {
+        cout << "Constructor is called" << endl;
     }
 
-    
-    Student(int _id , int _age , bool _present ,string _name, int _nos) {
-        id = _id;
-        age = _age;
-        present = _present;
-        name = _name;
-        nos = _nos;
-
+    Student(int id, int age, bool present, string name, int nos)
+    {
+        this->id = id;
+        this->age = age;
+        this->present = present;
+        this->name = name;
+        this->nos = nos;
     }
-
     void study()
     {
         cout << "Student is studying" << endl;
@@ -50,25 +49,8 @@ private:
 int main()
 {
 
-    cout << sizeof(Student) << endl;
-
-    Student s1;
-    s1.name = "Rahul";
-    s1.age = 21;
-    s1.id = 101;
-    s1.nos = 4;
-    s1.present = true;
-
-    Student s2;
-    s2.name = "Rohit";
-    s2.age = 22;    
-    s2.id = 102;
-    s2.nos = 5;
-    s2.present = false;
-
-
-
-    
-
+    Student *s1 = new Student(1, 20, true, "Rahul", 5);
+    cout << (*s1).name << endl;
+    delete s1;
     return 0;
 }
