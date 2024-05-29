@@ -1,2 +1,4 @@
-out<<s1.id<<endl;
-// cout<<s2.id<<endl;
+~Student()
+    // {
+    //     cout << "Destructor is called" << endl;
+    // }
