@@ -40,6 +40,17 @@ public:
         this->nos = srcobj.nos;
         this->gf = srcobj.gf;
     }
+
+    // getter setter
+    string getGfName()
+    {
+        return gf;
+    }
+
+    void setGfName(string gf)
+    {
+        this->gf = gf;
+    }
     void study()
     {
         cout << "Student is studying" << endl;
@@ -65,6 +76,10 @@ private:
     {
         cout << "Student is chatting" << endl;
     }
+
+    void cheating(){
+        cout<<"Student is cheating"<<endl;
+    }
 };
 int main()
 {
@@ -80,6 +95,9 @@ int main()
 
     Student s1(1, 20, true, "Rahul", 5, "Riya");
     cout << s1.name << endl;
+    cout << s1.getGfName() << endl;
+    s1.setGfName("Reetu");
+    cout << s1.getGfName() << endl;
 
     return 0;
 }
