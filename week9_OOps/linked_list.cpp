@@ -55,8 +55,14 @@ void insertAtHead(Node *&head, Node *&tail, int data)
         Node *newNode = new Node(data);
         newNode->next = head;
         head = newNode;
-        
-    }
+        }
+}
+
+
+void insetAtTail(Node *&tail, int data){
+    Node * newNode = new Node(data);
+    tail->next = newNode;
+    tail = newNode;
 }
 int main()
 {
@@ -66,6 +72,7 @@ int main()
     Node *fourth = new Node(40);
 
     Node *head = first;
+    Node *tail = fourth; // Declare the 'tail' variable
     first->next = second;
     second->next = third;
     third->next = fourth;
@@ -73,6 +80,7 @@ int main()
     // printLength(head);
     insertAtHead(head, tail, 5);
     // printLength(head);
+    insetAtTail(tail, 50);
     printLinkedList(head);
 
     return 0;
