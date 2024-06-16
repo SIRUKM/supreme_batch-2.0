@@ -122,34 +122,15 @@ void deletion(Node *&head, Node *&tail, int data, int position)
     {
         cout << "List is empty" << endl;
     }
-    else
-    {
-        if (position == 1)
-        {
-            insertAtHead(head, tail, data);
-        }
-        else if (position == findLength(head) + 1)
-        {
-            insertAtTail(head, tail, data);
-        }
-        else
-        {
-            Node *newNode = new Node(data);
-            Node *prevNode = NULL;
-            Node *currNode = head;
-            while (position != 1)
-            {
-                position--;
-                prevNode = currNode;
-                currNode = currNode->next;
-            }
-
-            prevNode->next = newNode;
-            newNode->prev = prevNode;
-            newNode->next = currNode;
-            currNode->prev = newNode;
-        }
+    if(head == tail){
+        Node * temp = head;
+        delete temp;
+        head = NULL;
+        tail = NULL;
     }
+
+    if
+}
 
     int main()
     {
