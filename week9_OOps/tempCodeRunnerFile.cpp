@@ -1,4 +1,5 @@
-~Student()
-    // {
-    //     cout << "Destructor is called" << endl;
-    // }
+Node()
+    {
+        this->data = NULL;
+        this->next = NULL;
+    }
