@@ -129,7 +129,6 @@ void deletion(Node *&head, Node *&tail, int data, int position)
         tail = NULL;
     }
 
-    if
 }
 
     int main()
