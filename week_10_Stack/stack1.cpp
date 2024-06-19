@@ -9,7 +9,7 @@ int main()
     st.push(30);
 
     cout << "size of stack is: " << st.size() << endl;
-    cout << st.top();
+    cout << st.top()<<endl;
     // while(!st.empty()){
     //     cout<<st.top()<<endl;
     //     st.pop();
@@ -17,12 +17,14 @@ int main()
 
     if (st.empty())
     {
-        cout << "stack is empty";
+        cout << "stack is empty"<<endl;
     }
     else
     {
-        cout << "stack is not empty";
+        cout << "stack is not empty"<<endl;
     }
+
+    cout<<st.top()<<endl;
 
     return 0;
 }
