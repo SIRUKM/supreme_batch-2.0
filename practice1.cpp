@@ -1,79 +1,60 @@
 #include<iostream>
-#include<map>
+#include<unordered_map>
 using namespace std;
-// I will be learnign map implementaiton in this code 
-// I will be learning about the map in this code
-// step wise implementation of map
 int main()
-{
-	// 1. Create a map
-	map<string, int> myMap;
+{	
+	// 1. unordered_map
+	unordered_map<string, int> hashTable;
 
-	// 2. Insert elements in the map 
-	myMap["apple"] = 10;
-	myMap["banana"] = 20;
-	myMap["cherry"] = 30;
+	// 2. insert
+	hashTable["apple"] = 1;
+	hashTable["banana"] = 2;
+	hashTable["cherry"] = 3;
 
-	// 3. Access elements of the map
-	cout << "before updataion: " << myMap["apple"] << endl;
 
-	// 4. Update elements of the map
-	myMap["apple"] = 40;
-	cout <<"after Updataion : "<< myMap["apple"] << endl;
-
-	// 5. Delete elements of the map
-	myMap.erase("apple");
-
-	myMap["dd"] = 50;// new insertion on the map is always at last
-
-	// 6. Check if an element is present in the map
-	if(myMap.find("apple")== myMap.end()){
-		cout << "apple is not present in the map" << endl;
+	// 3. find
+	if(hashTable.find("apple") != hashTable.end()){
+		cout << "apple is in the hashTable" << endl;
 	}
 	else{
-		cout << "apple is present in the map" << endl;
+		cout << "apple is not in the hashTable" << endl;
 	}
 
-	// 7. Iterate over the map
-	for(auto it = myMap.begin(); it != myMap.end(); it++){
-		cout<<it->first << " " << it->second <<endl;
+	// 4. erase
+	hashTable.erase("apple");
+
+
+	// 5. iterate
+	for(auto it = hashTable.begin(); it!= hashTable.end(); it++){
+		cout<<it->first<<" "<<it->second<<endl;
 	}
 
-	// 8. Size of the map
-	cout << "Size of the map is : " << myMap.size() << endl;
+	// 6. size
+	cout<<"size of hashTable: "<<hashTable.size()<<endl;
 
-	// 9. Clear the map
-	myMap.clear();
-	cout << "Size of the map after clearing is : " << myMap.size() << endl;
+	// 7. clear
+	hashTable.clear();
 
-	// 10. Check if the map is empty
-	if(myMap.empty()){
-		cout<<"map is empty" << endl;
-	}else{
-		cout<<"map is not empty" << endl;
+	// 8. empty
+	if(hashTable.empty()){
+		cout<<"hashTable is empty"<<endl;
+	}
+	else{
+		cout<<"hashTable is not empty"<<endl;
 	}
 
-	// 11. Multimap
-	multimap<string, int> myMultiMap;
-	myMultiMap.insert({"apple", 10});
-	myMultiMap.insert({"apple", 20});
-	myMultiMap.insert({"banana", 30});
-	myMultiMap.insert({"cherry", 40});
+	// 9. count
+	cout<<"count of apple: "<<hashTable.count("apple")<<endl;
+
+	// 10. at
+	hashTable["apple"] = 10;
+	cout<<"value of apple: "<<hashTable.at("apple")<<endl;
+
+	// 11. operator[]
+	hashTable["apple"] = 20;
+	cout<<"value of apple: "<<hashTable["apple"]<<endl;
 
 
-	// 12. Iterate over the multimap
-	for(auto it = myMultiMap.begin(); it!= myMultiMap.end(); it++){
-		cout<<it->first <<" "<< it->second << endl;
-	}
-
-	// 13. Size of the multimap
-	cout << "Size of the multimap is : " << myMultiMap.size() << endl;
-
-
-
-
-
-
-
+	
 	return 0;
 }
