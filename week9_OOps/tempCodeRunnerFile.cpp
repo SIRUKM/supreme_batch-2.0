@@ -1,5 +1,2 @@
-Node()
-    {
-        this->data = NULL;
-        this->next = NULL;
-    }
+head;
+    // delete second;
