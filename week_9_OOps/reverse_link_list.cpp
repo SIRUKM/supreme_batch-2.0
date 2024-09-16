@@ -99,6 +99,13 @@ public:
         }
         cout << endl;
     }
+
+    // bool checkLoop(){
+    //     Node * slow = head;
+    //     Node * fast = head;
+
+    //     while()
+    // }
 };
 int main()
 {
@@ -111,8 +118,8 @@ int main()
     list.print();
     // list.reverse();
     // list.print();
-    cout << list.lengthOfLL() << endl;
-    list.findMiddleElement();
+    // cout << list.lengthOfLL() << endl;
+    // list.findMiddleElement();
 
     return 0;
 }
